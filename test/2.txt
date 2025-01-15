@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "author": "Uri Shaked",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-pi-pico",
+      "id": "pico",
+      "top": 123.67,
+      "left": 135.97,
+      "rotate": 90,
+      "attrs": { "env": "arduino-community" }
+    },
+    { "type": "wokwi-lcd1602", "id": "lcd", "top": -17.85, "left": 22.03, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 114.8,
+      "left": 226.31,
+      "attrs": { "value": "220" }
+    },
+    { "type": "wokwi-led", "id": "led1", "top": 409.2, "left": 80.6, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": 399.6,
+      "left": 157.4,
+      "attrs": { "color": "yellow" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led3",
+      "top": 409.2,
+      "left": 253.4,
+      "attrs": { "color": "green" }
+    }
+  ],
+  "connections": [
+    [ "pico:GND.1", "lcd:VSS", "black", [ "v-51", "*", "h0", "v18" ] ],
+    [ "pico:GND.1", "lcd:K", "black", [ "v-51", "*", "h0", "v18" ] ],
+    [ "pico:GND.1", "lcd:RW", "black", [ "v-51", "*", "h0", "v18" ] ],
+    [ "pico:VSYS", "lcd:VDD", "red", [ "v16", "h-16" ] ],
+    [ "pico:VSYS", "r1:2", "red", [ "v16", "h0" ] ],
+    [ "r1:1", "lcd:A", "pink", [] ],
+    [ "pico:GP12", "lcd:RS", "blue", [ "v-16", "*", "h0", "v20" ] ],
+    [ "pico:GP11", "lcd:E", "purple", [ "v-20", "*", "h0", "v20" ] ],
+    [ "pico:GP10", "lcd:D4", "green", [ "v-24", "*", "h0", "v20" ] ],
+    [ "pico:GP9", "lcd:D5", "brown", [ "v-28", "*", "h0", "v20" ] ],
+    [ "pico:GP8", "lcd:D6", "gold", [ "v-32", "*", "h0", "v20" ] ],
+    [ "pico:GP7", "lcd:D7", "gray", [ "v-36", "*", "h0", "v20" ] ],
+    [ "pico:GND.8", "led3:C", "black", [ "v0" ] ],
+    [ "pico:GND.7", "led2:C", "black", [ "v118.23", "h-51.52", "v57.6" ] ],
+    [ "pico:GND.6", "led1:C", "black", [ "v89.43", "h-99.52", "v105.6" ] ],
+    [ "pico:GP17", "led2:A", "green", [ "v147.03", "h44.48", "v86.4", "h48" ] ],
+    [ "pico:GP18", "led3:A", "green", [ "v127.83", "h121.28", "v105.6", "h48" ] ],
+    [ "pico:GP19", "led1:A", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
