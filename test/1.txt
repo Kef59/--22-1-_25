@@ -1,0 +1,39 @@
+// LCD1602 and Pi Pico!
+
+#include <LiquidCrystal.h>
+#define RED 19
+#define YELLOW 17
+#define GREEN 18
+
+LiquidCrystal lcd(12, 11, 10, 9, 8, 7);
+
+void setup() {
+  lcd.begin(16, 2);
+  lcd.print("Hello World!");
+
+  lcd.setCursor(2, 1);
+  lcd.print("> Pi Pico <");
+  
+  pinMode(RED, OUTPUT);
+  pinMode(YELLOW, OUTPUT);
+  pinMode(GREEN, OUTPUT);
+}
+
+void loop() {
+  delay(1); // Adding a delay() here speeds up the simulation
+  digitalWrite(GREEN, HIGH);
+  delay(3000);
+
+  digitalWrite(GREEN, LOW);
+  digitalWrite(YELLOW, HIGH);
+  delay(500);
+
+  digitalWrite(YELLOW, LOW);
+  digitalWrite(RED, HIGH);
+  delay(2000);
+
+  digitalWrite(YELLOW, HIGH);
+  delay(500);
+  digitalWrite(YELLOW, LOW);
+  digitalWrite(RED, LOW);
+}
