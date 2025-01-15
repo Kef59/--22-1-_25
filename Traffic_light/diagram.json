@@ -1,35 +1,4 @@
 {
-  "version": 1,
-  "author": "RIS-22-1bz_25",
-  "parts": [
-    {
-      "type": "pico",
-      "id": "pico",
-      "top": 20,
-      "left": 60,
-      "attrs": { "env": "arduino-community" }
-    },
-    {
-      "type": "led",
-      "id": "led1",
-      "top": 3,
-      "left": 0,
-      "attrs": { "color": "red" }
-    },
-    {
-      "type": "led",
-      "id": "led2",
-      "top": 48,
-      "left": 0,
-      "attrs": { "color": "yellow" }
-    },
-    {
-      "type": "led",
-      "id": "led3",
-      "top": 98,
-      "left": 0,
-      "attrs": { "color": "green" }
-    }
   ],
   "connections": [
     [ "pico:GND.1", "led1:C", "black", [] ],
