@@ -1,2 +1,2 @@
-Raspberry Pi Temperature Monitoring
-This is a set of scripts for monitoring ambient room temperature with your Raspberry Pi.
+Мониторинг температуры Raspberry Pi
+Это набор скриптов для мониторинга температуры окружающей среды в помещении с помощью вашего Raspberry Pi
