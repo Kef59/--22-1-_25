@@ -1,7 +1,9 @@
 #!/bin/bash
 
-curl -O https://raw.githubusercontent.com/fire1ce/raspberry-pi-pir-motion-display-control/main/motion-display-control.py
-curl -O https://raw.githubusercontent.com/fire1ce/raspberry-pi-pir-motion-display-control/main/motion-display-control.service
+https://github.com/Kef59/--22-1-_25/blob/main/install.sh
+
+curl -O https://github.com/Kef59/--22-1-_25/blob/main/motion-display-control.py
+curl -O https://github.com/Kef59/--22-1-_25/blob/main//motion-display-control.service
 
 if [ ! -d "/usr/local/bin" ]; then
   sudo mkdir -p /usr/local/bin
