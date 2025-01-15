@@ -1,7 +1,5 @@
 #!/bin/bash
 
-https://github.com/Kef59/--22-1-_25/blob/main/install.sh
-
 curl -O https://github.com/Kef59/--22-1-_25/blob/main/motion-display-control.py
 curl -O https://github.com/Kef59/--22-1-_25/blob/main//motion-display-control.service
 
