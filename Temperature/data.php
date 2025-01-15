@@ -3,8 +3,8 @@
 
 // Параметры подключения к базе данных
 $servername = "localhost";
-$username = "test_temp";
-$password = "123QWEasd";
+$username = "test";
+$password = "QWEasd1";
 $dbname = "test_temp";
 
 // Создание подключения
