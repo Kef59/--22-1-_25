@@ -3,28 +3,28 @@
   "author": "RIS-22-1bz_25",
   "parts": [
     {
-      "type": "wokwi-pi-pico",
+      "type": "pico",
       "id": "pico",
       "top": 20,
       "left": 60,
       "attrs": { "env": "arduino-community" }
     },
     {
-      "type": "wokwi-led",
+      "type": "led",
       "id": "led1",
       "top": 3,
       "left": 0,
       "attrs": { "color": "red" }
     },
     {
-      "type": "wokwi-led",
+      "type": "led",
       "id": "led2",
       "top": 48,
       "left": 0,
       "attrs": { "color": "yellow" }
     },
     {
-      "type": "wokwi-led",
+      "type": "led",
       "id": "led3",
       "top": 98,
       "left": 0,
